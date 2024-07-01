@@ -1,41 +1,35 @@
-import Navbar from "../components/navbar.js";
+import Image from "next/image";
+import Navbar from "@/components/navbar";
 import Spline from "@splinetool/react-spline";
 import styles from "../styles/hero.module.css";
 
 export default function hero() {
-    return <div className={styles.bg}>
+    return <div className={styles.main}>
+        <div className={styles.bg}>
         <div className={styles.spline}>
         <Spline
-        scene="https://prod.spline.design/3zgIFixr-UzkbknH/scene.splinecode" 
-      />
-
+        scene="https://prod.spline.design/3zgIFixr-UzkbknH/scene.splinecode" />
         </div>
-        <div className={styles.navbar}>
-        <svg xmlns="http://www.w3.org/2000/svg" width="120" height="56" viewBox="0 0 120 56" fill="none">
-  <path d="M35.8065 25.164C36.6275 22.0974 39.7769 20.2775 42.8408 21.0992C45.9047 21.9209 47.723 25.073 46.902 28.1396L40.5843 51.7379C39.7634 54.8045 36.614 56.6244 33.5501 55.8027C30.4861 54.981 28.6679 51.8289 29.4888 48.7623L35.8065 25.164Z" fill="#FAFAFA"/>
-  <path d="M18.0018 25.164C18.8228 22.0974 21.9722 20.2775 25.0361 21.0992C28.1 21.9209 29.9183 25.073 29.0973 28.1396L22.7796 51.7379C21.9587 54.8045 18.8093 56.6244 15.7454 55.8027C12.6814 54.981 10.8632 51.8289 11.6841 48.7623L18.0018 25.164Z" fill="#FAFAFA"/>
-  <path d="M0.197129 25.1789C1.01811 22.1123 4.16746 20.2924 7.23139 21.1141C10.2953 21.9358 12.1136 25.0879 11.2926 28.1545C10.4716 31.2211 7.3223 33.0409 4.25836 32.2192C1.19443 31.3976 -0.623851 28.2455 0.197129 25.1789Z" fill="#FAFAFA"/>
-  <path d="M53.6112 25.164C54.4322 22.0974 57.5816 20.2775 60.6455 21.0992C63.7094 21.9209 65.5277 25.073 64.7067 28.1396L58.389 51.7379C57.5681 54.8045 54.4187 56.6244 51.3548 55.8027C48.2908 54.981 46.4726 51.8289 47.2935 48.7623L53.6112 25.164Z" fill="#FAFAFA"/>
-  <path d="M78.5952 25.164C79.4162 22.0974 82.5656 20.2775 85.6295 21.0992C88.6934 21.9209 90.5117 25.073 89.6907 28.1396L83.3731 51.7379C82.5521 54.8045 79.4027 56.6244 76.3388 55.8027C73.2749 54.981 71.4566 51.8289 72.2776 48.7623L78.5952 25.164Z" fill="#FAFAFA"/>
-  <path d="M101.974 4.26206C102.795 1.19546 105.945 -0.624391 109.009 0.1973C112.072 1.01899 113.891 4.17107 113.07 7.23766L101.178 51.7199C100.357 54.7865 97.2073 56.6063 94.1434 55.7846C91.0795 54.9629 89.2612 51.8108 90.0822 48.7443L101.974 4.26206Z" fill="#FAFAFA"/>
-  <path d="M107.887 48.7443C108.708 45.6777 111.857 43.8578 114.921 44.6795C117.985 45.5012 119.803 48.6533 118.982 51.7199C118.161 54.7865 115.012 56.6063 111.948 55.7846C108.884 54.9629 107.066 51.8108 107.887 48.7443Z" fill="#FAFAFA"/>
-        </svg>
-        <div>
-            <ul className={styles.links}>
-                <li>About Me</li>
-                <li>Works</li>
-                <li>Resume</li>
-            </ul>
-        </div>
-        </div>
-        <img src=""></img>
+        <Navbar />
+        <Image
+        src="https://cdn.flabs.in/webassets/6dfcbbc05c598f509949.jpg"
+        alt="Picture of the author"
+        width={100}
+        height={100} />
         <div className={styles.content}>
-        <p>Hello! 👋 I'm Mukul Dhiman</p>
+        <p className={styles.para}>Hello! 👋 I'm Mukul Dhiman</p>
         <h1>PRODUCT DESIGNER</h1>
-        <p>from IIT Roorkee and I design digital products
+        <p className={styles.para}>from IIT Roorkee and I design digital products
         that users really desire.</p>
         </div>
-
-
+    </div>
+    <div className={styles.scroll}>
+    <svg xmlns="http://www.w3.org/2000/svg" width="132" height="88" viewBox="0 0 132 88" fill="none">
+  <path d="M32.1379 66.8041C41.4735 80.0844 53.2289 88 66.0011 88C78.7733 88 90.5287 80.0844 99.8643 66.8041C107.314 56.2069 118.455 48 131.408 48V0H0.59375V48C13.5474 48 24.6884 56.2069 32.1379 66.8041Z" fill="#141414"/>
+    </svg>
+    <svg className={styles.arrow} xmlns="http://www.w3.org/2000/svg" width="16" height="22" viewBox="0 0 16 22" fill="none">
+  <path d="M9 1C9 0.447715 8.55228 2.41426e-08 8 0C7.44772 -2.41426e-08 7 0.447715 7 1L9 1ZM7.29289 21.7071C7.68342 22.0976 8.31658 22.0976 8.70711 21.7071L15.0711 15.3431C15.4616 14.9526 15.4616 14.3195 15.0711 13.9289C14.6805 13.5384 14.0474 13.5384 13.6569 13.9289L8 19.5858L2.34315 13.9289C1.95262 13.5384 1.31946 13.5384 0.928932 13.9289C0.538407 14.3195 0.538407 14.9526 0.928932 15.3431L7.29289 21.7071ZM7 1L7 21L9 21L9 1L7 1Z" fill="#FAFAFA"/>
+    </svg>
+    </div>
     </div>
 }
