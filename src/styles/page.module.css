@@ -1,6 +1,6 @@
-.bg{
+.main{
     background: #fafafa;
     display: flex;
     flex-direction: column;
-    gap: 64px;
+    gap: 200px;
 }
