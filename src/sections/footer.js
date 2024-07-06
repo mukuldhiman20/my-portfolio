@@ -1,4 +1,5 @@
 import styles from '../styles/footer.module.css'
+import Button from "@/components/buttonf"
 
 export default function Footer() {
     return <div className={styles.bg}>
@@ -21,6 +22,7 @@ export default function Footer() {
                 <p>
                     Let’s bring your idea to reality.
                 </p>
+                <Button />
                 </div>
                 <div className={styles.leftbottom}>
                 <svg xmlns="http://www.w3.org/2000/svg" width="120" height="56" viewBox="0 0 120 56" fill="none">

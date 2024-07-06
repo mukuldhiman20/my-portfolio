@@ -1,11 +1,13 @@
 .card {
+    width: 420px;
     display: flex;
-    height: 200px;
-    padding: 32px 32px 24px 32px;
+    height: auto;
+    padding: 24px 32px 24px 32px;
+    margin: 0px;
     flex-direction: column;
-    justify-content: space-between;
     align-items: flex-start;
     border-radius: 16px;
+    gap: 24px;
     border: 1px solid var(--Border-colorBorder, #D9D9D9);
 }
 
@@ -15,15 +17,7 @@
 }
 
 .name {
-    color: #141414;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 24px;
-}
-
-.content {
-    width: 420px;
+    width: 100%;
     color: #141414;
     font-size: 18px;
     font-style: normal;
@@ -31,7 +25,17 @@
     line-height: 24px;
 }
 
+.content {
+    width: 100%;
+    color: #141414;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
 .position {
+    width: 100%;
     color: #b3b8c6;
     font-size: 16px;
     font-style: normal;
@@ -40,9 +44,80 @@
 }
 
 .bottom {
+    width: 88%;
     display: flex;
     justify-content: center;
     align-items: flex-start;
     gap: 12px;
+}
 
+.bottomcontent {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+
+
+@media (max-width: 520px) {
+    .card {
+        width: 76%;
+        display: flex;
+        height: auto;
+        flex-direction: column;
+        padding: 24px 32px 24px 32px;
+        margin: 0px;
+        gap: 32px;
+        align-items: flex-start;
+        border-radius: 16px;
+        border: 1px solid var(--Border-colorBorder, #D9D9D9);
+    }
+    
+    .logo {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .name {
+        width: 100%;
+        color: #141414;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 20spx;
+    }
+    
+    .content {
+        width: 96%;
+        color: #141414;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px;
+    }
+    
+    .position {
+        width: 100%;
+        color: #b3b8c6;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 20px;
+    }
+    
+    .bottom {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 12px;
+    }
+    
+    .bottomcontent {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
 }

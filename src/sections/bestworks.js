@@ -1,4 +1,5 @@
 import styles from "../styles/bestworks.module.css"
+import Button from "@/components/buttono"
 import Workcards from "@/components/workcards"
 
 export default function approch(){
@@ -17,5 +18,6 @@ export default function approch(){
                 type= "Case Study"
             />
         </div>
+        <Button />
     </div>
 }

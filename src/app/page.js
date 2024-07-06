@@ -7,16 +7,19 @@ import Bestworks from "@/sections/bestworks"
 import styles from "../styles/page.module.css"
 
 export default function Home() {
+
+  const scrollToSection = (sectionId) => {
+    document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (  
-    <div>
       <main className={styles.main}> 
       <Hero />
-      <Approch />
+      <Approch id="scrolldown" />
       <Bestworks />
       <Skills />
       <Recommendations />
       <Footer />
       </main>
-    </div>
   );
 }

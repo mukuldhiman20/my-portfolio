@@ -4,7 +4,14 @@ import Spline from "@splinetool/react-spline";
 import styles from "../styles/hero.module.css";
 
 export default function hero() {
-    return <div className={styles.main}>
+
+  // const scrollToSection = (sectionId) => {
+  //   document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+  // };
+
+
+    return <>
+    <div className={styles.main}>
         <div className={styles.bg}>
         <div className={styles.spline}>
         <Spline
@@ -22,8 +29,8 @@ export default function hero() {
         <p className={styles.para}>from IIT Roorkee and I design digital products
         that users really desire.</p>
         </div>
-    </div>
-    <div className={styles.scroll}>
+        </div>
+        <div className={styles.scroll} >
     <svg xmlns="http://www.w3.org/2000/svg" width="132" height="88" viewBox="0 0 132 88" fill="none">
   <path d="M32.1379 66.8041C41.4735 80.0844 53.2289 88 66.0011 88C78.7733 88 90.5287 80.0844 99.8643 66.8041C107.314 56.2069 118.455 48 131.408 48V0H0.59375V48C13.5474 48 24.6884 56.2069 32.1379 66.8041Z" fill="#141414"/>
     </svg>
@@ -32,4 +39,5 @@ export default function hero() {
     </svg>
     </div>
     </div>
+    </>
 }

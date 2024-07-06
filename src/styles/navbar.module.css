@@ -8,6 +8,10 @@
     align-items: center;
  }
 
+ .menu {
+   display: none;
+ }
+
  .navbar li {
     color: #FAFAFA;
     text-align: center;
@@ -27,4 +31,35 @@
    display: flex;
    align-items: center;
    gap: 64px;
+ }
+
+
+
+
+
+ @media (max-width: 520px) {
+   .navbar {
+      display: flex;
+      width: 92%;
+      padding-left: 4%;
+      padding-right: 4%;
+      padding-bottom: 32px;
+      margin-bottom: 32px;
+      justify-content: space-between;
+      align-items: center;
+   }
+   
+
+   .logo {
+      height: 36px;
+      width: 80px;
+   }
+
+   .menu {
+      display: flex;
+   }
+
+   .right {
+      display: none;
+   }
  }

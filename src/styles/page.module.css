@@ -2,5 +2,26 @@
     background: #fafafa;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 200px;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+@media (max-width: 520px) {
+    .main{
+        background: #fafafa;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 160px;
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+    }
 }

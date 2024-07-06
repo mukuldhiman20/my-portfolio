@@ -1,10 +1,33 @@
 body {
+  width: 100%;
   margin: 0px;
   background: #fafafa;
   padding: opx;
+  /* overflow: hidden;
+  height: 100%;
+  margin: 0;
+  padding: 0; */
+  overflow: -moz-scrollbars-none; /* Firefox */
+  -ms-overflow-style: none;       /* Internet Explorer and Edge */
+  scrollbar-width: none;
 }
 
 p{
   margin: 0px;
   padding: 0px;
+}
+
+html {
+  scroll-behavior: smooth;
+  /* overflow: hidden;
+  height: 100%;
+  margin: 0;
+  padding: 0; */
+  overflow: -moz-scrollbars-none; /* Firefox */
+  -ms-overflow-style: none;       /* Internet Explorer and Edge */
+  scrollbar-width: none;
+}
+
+html::-webkit-scrollbar, body::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
 }

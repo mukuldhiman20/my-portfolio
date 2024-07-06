@@ -17,3 +17,16 @@
     line-height: 32px;
     text-transform: uppercase;
 }
+
+
+
+
+@media (max-width: 520px) {
+    .main {
+        width: 100%;
+    }
+
+    .main img {
+        display: none;
+    }
+}
