@@ -19,7 +19,7 @@ export default function Footer() {
         <div className={styles.content}>
             <div className={styles.left}>
                 <div className={styles.lefttop}>
-                <p>
+                <p className={styles.lefttopp}>
                     Let’s bring your idea to reality.
                 </p>
                 <Button />

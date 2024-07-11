@@ -17,6 +17,7 @@ export default function approch(){
                 title= "Zepto - Heuristic Evaluation"
                 type= "Case Study"
             />
+            
         </div>
         <Button />
     </div>
