@@ -22,6 +22,11 @@
     display: flex;
  }
 
+ .link {
+   text-decoration: none;
+   color: #FAFAFA;
+ }
+
  .navbar ul {
     display: flex;
     gap: 32px;

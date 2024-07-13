@@ -1,5 +1,6 @@
 import styles from "../styles/navbar.module.css"
 import Button from "./buttonf"
+import Link from "next/link"
 
 export default function navbar() {
    return <div className={styles.navbar}>
@@ -16,10 +17,10 @@ export default function navbar() {
   <path d="M5 28C3.89543 28 3 27.1046 3 26C3 24.8954 3.89543 24 5 24H37C38.1046 24 39 24.8954 39 26C39 27.1046 38.1046 28 37 28H5ZM5 18C3.89543 18 3 17.1046 3 16C3 14.8954 3.89543 14 5 14H37C38.1046 14 39 14.8954 39 16C39 17.1046 38.1046 18 37 18H5ZM17 8C15.8954 8 15 7.10457 15 6C15 4.89543 15.8954 4 17 4H37C38.1046 4 39 4.89543 39 6C39 7.10457 38.1046 8 37 8H17Z" fill="#FAFAFA"/>
         </svg>
         <div className={styles.right}>
-            <ul className={styles.links}>
-                <li>About Me</li>
-                <li>Works</li>
-                <li>Resume</li>
+            <ul>
+                <li><Link className={styles.link} href="/about-me">About Me</Link></li>
+                <li><Link className={styles.link} href="/works">Works</Link></li>
+                <li><Link className={styles.link} href="/resume">Resume</Link></li>
             </ul>
         <Button />
         </div>
