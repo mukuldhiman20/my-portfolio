@@ -1,6 +1,6 @@
 .button {
     display: flex;
-    padding: 8px 24px;
+    padding: 4px 12px;
     justify-content: center;
     align-items: center;
     gap: 10px;
@@ -8,6 +8,7 @@
     background: #fafafa;
     border-radius: 8px;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .button p {
@@ -16,4 +17,5 @@
     font-style: normal;
     font-weight: 500;
     line-height: 24px;
+    text-decoration: none;
 }

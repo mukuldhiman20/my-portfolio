@@ -17,8 +17,7 @@
     margin-left: auto;
     margin-right: auto;
     position: absolute;
-    /* bottom: 0px; */
-    /* z-index: 0; */
+    pointer-events: none;
 }
 
 .content {
@@ -83,6 +82,7 @@
     display: flex;
     align-items: center;
     gap: 8px;
+    cursor: pointer;
 }
 
 .backtotop p {
@@ -94,12 +94,15 @@
     line-height: 32px; 
     margin: 0px;
     padding: 0px;
+    cursor: pointer;
 }
 
 .socials {
     display: flex;
     align-items: center;
     gap: 8px;
+    cursor: pointer;
+    text-decoration: none;
 }
 
 .socials p{
@@ -110,6 +113,7 @@
     line-height: 24px; 
     margin: 0px;
     padding: 0px;
+    text-decoration: none;
 }
 
 .socialstop {

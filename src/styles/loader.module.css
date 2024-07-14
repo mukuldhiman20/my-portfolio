@@ -1,0 +1,113 @@
+/* body {
+    background: #FAFAFA;
+  } */
+  
+  .preloader {
+    width: 100%;
+    height: 320px;
+    margin: 240px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .p {
+    color: #141414;
+    margin: 5px 0;
+    text-align: center;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  
+  .lines {
+    width: auto;
+    height: 32px;
+    margin: 0 1px;
+    display: inline-block;
+    animation: opacity-2 1000ms infinite ease-in-out;
+  }
+  
+  .line1 { 
+    width: 2px;
+    height: 24px;
+    background: #141414;
+    margin: 0 4px;
+    display: inline-block;
+    animation: opacity-2 1000ms infinite ease-in-out;
+    animation-delay: 800ms; }
+
+
+  .line2 { 
+    width: 2px;
+    height: 24px;
+    background: #141414;
+    margin: 0 4px;
+    display: inline-block;
+    animation: opacity-2 1000ms infinite ease-in-out;
+    animation-delay: 600ms; }
+  .line3 { 
+    width: 2px;
+    height: 24px;
+    background: #141414;
+    margin: 0 4px;
+    display: inline-block;
+    animation: opacity-2 1000ms infinite ease-in-out;
+    animation-delay: 400ms; }
+  .line4 { 
+    width: 2px;
+    height: 24px;
+    background: #141414;
+    margin: 0 4px;
+    display: inline-block;
+    animation: opacity-2 1000ms infinite ease-in-out;
+    animation-delay: 200ms; }
+  .line6 { 
+    width: 2px;
+    height: 24px;
+    background: #141414;
+    margin: 0 4px;
+    display: inline-block;
+    animation: opacity-2 1000ms infinite ease-in-out;
+    animation-delay: 200ms; }
+  .line7 { 
+    width: 2px;
+    height: 24px;
+    background: #141414;
+    margin: 0 4px;
+    display: inline-block;
+    animation: opacity-2 1000ms infinite ease-in-out;
+    animation-delay: 400ms; }
+  .line8 { 
+    width: 2px;
+    height: 24px;
+    background: #141414;
+    margin: 0 4px;
+    display: inline-block;
+    animation: opacity-2 1000ms infinite ease-in-out;
+    animation-delay: 600ms; }
+  .line9 { 
+    width: 2px;
+    height: 24px;
+    background: #141414;
+    margin: 0 4px;
+    display: inline-block;
+    animation: opacity-2 1000ms infinite ease-in-out;
+    animation-delay: 800ms; }
+  
+  
+  @keyframes opacity-2 { 
+    0% { 
+      opacity: 1;
+      height: 26px;
+    }
+    50% { 
+      opacity: 0;
+      height: 22px;
+    }
+    100% { 
+      opacity: 1;
+      height: 26px;
+    }  
+  }
