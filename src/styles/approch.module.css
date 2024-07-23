@@ -51,8 +51,27 @@
   gap: 16px;
 }
 
+/* .hidden {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
 
-@keyframes fadeInUp {
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.animatable {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  transform-origin: 0 100%;
+  line-height: 1em;
+} */
+
+
+/* @keyframes fadeInUp {
     0% {
       transform: translateY(100%);
       opacity: 0;
@@ -61,7 +80,7 @@
       transform: translateY(0%);
       opacity: 1;
     }
-  }
+  } */
   
 
 

@@ -4,6 +4,7 @@ import Footer from "@/sections/footer";
 import Hero from "@/sections/hero";
 import Approch from "@/sections/approch"
 import Skills from "@/sections/skills"
+import AnimatedSection from "@/components/animatedsection";
 import Recommendations from "@/sections/recommendations";
 import Bestworks from "@/sections/bestworks"
 import styles from "../styles/page.module.css"
@@ -52,7 +53,9 @@ export default function Home() {
   return ( 
       <main className={styles.main}> 
       <Hero id='backtotop' />
-      <Approch id="scrolldown" />
+      <AnimatedSection className={styles.animatable}>
+        <Approch id="scrolldown" />
+      </AnimatedSection>
       <Bestworks />
       <Skills />
       <Recommendations />

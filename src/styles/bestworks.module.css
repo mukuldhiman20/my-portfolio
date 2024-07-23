@@ -25,6 +25,10 @@
     width: 100%;
 }
 
+.button {
+    text-decoration: none;
+}
+
 
 
 
@@ -57,5 +61,9 @@
         flex-wrap: nowrap;
         gap: 32px;
         width: 100%;
+    }
+
+    .button {
+        text-decoration: none;
     }
 }

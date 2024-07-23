@@ -1,5 +1,6 @@
 import styles from "../styles/bestworks.module.css"
 import Button from "@/components/buttono"
+import Link from "next/link"
 import Workcards from "@/components/workcards"
 
 export default function approch(){
@@ -19,6 +20,7 @@ export default function approch(){
             />
             
         </div>
-        <Button />
+        <Link href='/works' className={styles.button}><Button /></Link>
+        
     </div>
 }
