@@ -1,27 +1,24 @@
-'use client'
+"use client";
 
 import Footer from "@/sections/footer";
 import Hero from "@/sections/hero";
-import Approch from "@/sections/approch"
-import Skills from "@/sections/skills"
-import AnimatedSection from "@/components/animatedsection";
+import Approch from "@/sections/approch";
+import Skills from "@/sections/skills";
 import Recommendations from "@/sections/recommendations";
-import Bestworks from "@/sections/bestworks"
-import styles from "../styles/page.module.css"
+import Bestworks from "@/sections/bestworks";
+import styles from "../styles/page.module.css";
 import { useRouter } from "next/navigation";
 import { useState, useEffect } from "react";
 import Loader from "@/components/loader";
 
-
 export default function Home() {
-
   const [loading, setLoading] = useState(true);
   const router = useRouter();
 
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
-    },1500);
+    }, 1500);
 
     return () => clearTimeout(timer);
   }, []);
@@ -45,22 +42,18 @@ export default function Home() {
   //   }
   // }, [router]);
 
-
   if (loading) {
     return <Loader />;
   }
 
-  return ( 
-      <main className={styles.main}> 
-      <Hero id='backtotop' />
-      <AnimatedSection className={styles.animatable}>
-        <Approch id="scrolldown" />
-      </AnimatedSection>
+  return (
+    <main className={styles.main}>
+      <Hero id="backtotop" />
+      <Approch id="scrolldown" />
       <Bestworks />
       <Skills />
       <Recommendations />
       <Footer />
-      </main>
-      
+    </main>
   );
 }
