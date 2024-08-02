@@ -1,5 +1,5 @@
-import styles from "../styles/recommendations.module.css";
-import Recomcards from "@/components/recomcards";
+import styles from "@/sections/recommendations/recommendations.module.css";
+import Recomcards from "@/components/recomcards/recomcards";
 import useIntersectionAnimation from "@/hooks/useIntersectionAnimatio";
 
 export default function recommendations() {

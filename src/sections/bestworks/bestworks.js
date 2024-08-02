@@ -1,7 +1,7 @@
-import styles from "../styles/bestworks.module.css";
-import Button from "@/components/buttono";
+import styles from "@/sections/bestworks/bestworks.module.css";
+import Button from "@/components/buttono/buttono";
 import Link from "next/link";
-import Workcards from "@/components/workcards";
+import Workcards from "@/components/workcards/workcards";
 import useIntersectionAnimation from "@/hooks/useIntersectionAnimatio";
 
 export default function Bestworks() {
@@ -21,11 +21,13 @@ export default function Bestworks() {
           type="Internship - Flabs"
         />
 
-        <Workcards
-          thumbnail="https://cdn.flabs.in/webassets/24d6dbe517698a1f4589.png"
-          title="Zepto - Heuristic Evaluation"
-          type="Case Study"
-        />
+        <Link href="/works/zepto" className={styles.button}>
+          <Workcards
+            thumbnail="https://cdn.flabs.in/webassets/24d6dbe517698a1f4589.png"
+            title="Zepto - Heuristic Evaluation"
+            type="Case Study"
+          />
+        </Link>
       </div>
       <Link href="/works" className={styles.button}>
         <Button />

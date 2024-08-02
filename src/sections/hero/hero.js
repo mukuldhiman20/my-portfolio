@@ -1,9 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Link as ScrollLink } from "react-scroll";
-import Navbar from "@/components/navbar";
+import Navbar from "@/components/navar/navbar";
 import Spline from "@splinetool/react-spline";
-import styles from "../styles/hero.module.css";
+import styles from "@/sections/hero/hero.module.css";
 import useIntersectionAnimation from "@/hooks/useIntersectionAnimatio";
 
 export default function hero({ id }) {

@@ -1,4 +1,4 @@
-import styles from "../styles/skills.module.css";
+import styles from "@/sections/skills/skills.module.css";
 import useIntersectionAnimation from "@/hooks/useIntersectionAnimatio";
 
 export default function skills() {

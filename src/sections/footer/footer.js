@@ -1,5 +1,5 @@
-import styles from "../styles/footer.module.css";
-import Button from "@/components/buttonf";
+import styles from "@/sections/footer/footer.module.css";
+import Button from "@/components/buttonf/buttonf";
 import Link from "next/link";
 import { Link as ScrollLink } from "react-scroll";
 import useIntersectionAnimation from "@/hooks/useIntersectionAnimatio";

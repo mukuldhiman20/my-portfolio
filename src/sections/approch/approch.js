@@ -1,4 +1,4 @@
-import styles from "../styles/approch.module.css";
+import styles from "@/sections/approch/approch.module.css";
 import useIntersectionAnimation from "@/hooks/useIntersectionAnimatio";
 
 export default function approch({ id }) {

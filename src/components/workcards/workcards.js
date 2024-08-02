@@ -1,5 +1,5 @@
-import styles from "../styles/workcards.module.css";
-import Button from "@/components/iconbutton";
+import styles from "@/components/workcards/workcards.module.css";
+import Button from "@/components/iconbutton/iconbutton";
 
 export default function workcards({ title, thumbnail, type }) {
   return (
