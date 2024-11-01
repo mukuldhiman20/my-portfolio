@@ -1,123 +1,123 @@
 .card {
-    width: 420px;
-    display: flex;
-    height: auto;
-    padding: 24px 32px 24px 32px;
-    margin: 0px;
-    flex-direction: column;
-    align-items: flex-start;
-    border-radius: 16px;
-    gap: 24px;
-    border: 1px solid var(--Border-colorBorder, #D9D9D9);
+  width: 420px;
+  display: flex;
+  height: auto;
+  padding: 24px 32px 24px 32px;
+  margin: 0px;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 16px;
+  gap: 24px;
+  border: 1px solid var(--Border-colorBorder, #d9d9d9);
 }
 
 .logo {
-    width: 48px;
-    height: 48px;
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
 }
 
 .name {
-    width: 100%;
-    color: #141414;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 24px;
+  width: 100%;
+  color: #141414;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
 }
 
 .content {
-    width: 100%;
-    color: #141414;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px;
+  width: 100%;
+  color: #141414;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
 }
 
 .position {
-    width: 100%;
-    color: #b3b8c6;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px;
+  width: 100%;
+  color: #b3b8c6;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
 }
 
 .bottom {
-    width: 88%;
+  width: 88%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.bottomcontent {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+@media (max-width: 520px) {
+  .card {
+    width: 76%;
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    padding: 24px 32px 24px 32px;
+    margin: 0px;
+    gap: 32px;
+    align-items: flex-start;
+    border-radius: 16px;
+    border: 1px solid var(--Border-colorBorder, #d9d9d9);
+  }
+
+  .logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 6px;
+  }
+
+  .name {
+    width: 100%;
+    color: #141414;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20spx;
+  }
+
+  .content {
+    width: 96%;
+    color: #141414;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+  }
+
+  .position {
+    width: 100%;
+    color: #b3b8c6;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+  }
+
+  .bottom {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: flex-start;
     gap: 12px;
-}
+  }
 
-.bottomcontent {
+  .bottomcontent {
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-}
-
-
-
-@media (max-width: 520px) {
-    .card {
-        width: 76%;
-        display: flex;
-        height: auto;
-        flex-direction: column;
-        padding: 24px 32px 24px 32px;
-        margin: 0px;
-        gap: 32px;
-        align-items: flex-start;
-        border-radius: 16px;
-        border: 1px solid var(--Border-colorBorder, #D9D9D9);
-    }
-    
-    .logo {
-        width: 40px;
-        height: 40px;
-    }
-    
-    .name {
-        width: 100%;
-        color: #141414;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 20spx;
-    }
-    
-    .content {
-        width: 96%;
-        color: #141414;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 24px;
-    }
-    
-    .position {
-        width: 100%;
-        color: #b3b8c6;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 20px;
-    }
-    
-    .bottom {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-        gap: 12px;
-    }
-    
-    .bottomcontent {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-    }
+  }
 }

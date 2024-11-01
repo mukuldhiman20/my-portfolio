@@ -86,18 +86,18 @@ export default function navbar() {
       </div>
       <div className={`${styles.right} ${menuOpen ? styles.menuOpen : ""}`}>
         <ul>
-          <li className={router.pathname === "/about-me" ? styles.active : ""}>
+          {/* <li className={router.pathname === "/about-me" ? styles.active : ""}>
             <Link className={styles.link} href="/about-me">
               <span>About Me</span>
             </Link>
-          </li>
+          </li> */}
           <li>
             <Link className={styles.link} href="/works">
               <span>Works</span>
             </Link>
           </li>
           <li>
-            <Link className={styles.link} href="/resume">
+            <Link className={styles.link} href="/resume" target="blank">
               <span>Resume</span>
             </Link>
           </li>

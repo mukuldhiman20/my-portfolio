@@ -2,7 +2,11 @@ import styles from "@/sections/skills/skills.module.css";
 import useIntersectionAnimation from "@/hooks/useIntersectionAnimatio";
 
 export default function skills() {
-  const ref = useIntersectionAnimation([styles.title, styles.image]);
+  const ref = useIntersectionAnimation([
+    styles.title,
+    styles.imageweb,
+    styles.imagemob,
+  ]);
 
   return (
     <div className={styles.main} ref={ref}>
@@ -10,8 +14,12 @@ export default function skills() {
         Tools & skills for crafting intuitive design
       </p>
       <img
-        src="https://cdn.flabs.in/webassets/3a5e67ab793aa5061de6.png"
-        className={styles.image}
+        src="https://cdn.flabs.in/webassets/8227498e3edf888e564f.png"
+        className={styles.imageweb}
+      />
+      <img
+        src="https://cdn.flabs.in/webassets/1a4374bff7c18fdc4332.png"
+        className={styles.imagemob}
       />
     </div>
   );

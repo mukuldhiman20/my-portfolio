@@ -87,6 +87,52 @@
   cursor: pointer;
 }
 
+.arrowContainer {
+  position: relative;
+  overflow: hidden;
+}
+
+.arrow {
+  animation: initialArrow 0.2s ease-in-out forwards;
+}
+
+.backtotop:hover .arrow {
+  animation: moveUp 0.2s ease-in-out forwards,
+    newArrow 0.2s ease-in-out 0.2s forwards;
+}
+
+@keyframes moveUp {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+}
+
+@keyframes newArrow {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes initialArrow {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 .backtotop p {
   color: #fafafa;
   text-align: right;

@@ -9,6 +9,7 @@ import Bestworks from "@/sections/bestworks/bestworks";
 import styles from "@/app/page.module.css";
 import { useState, useEffect } from "react";
 import Loader from "@/components/loader/loader";
+import CustomCursor from "@/components/customcursor/customcursor";
 
 export default function Home() {
   const [loading, setLoading] = useState(true);
@@ -26,13 +27,16 @@ export default function Home() {
   }
 
   return (
-    <main className={styles.main}>
-      <Hero id="backtotop" />
-      <Approch id="scrolldown" />
-      <Bestworks />
-      <Skills />
-      <Recommendations />
-      <Footer />
-    </main>
+    <div>
+      {/* <CustomCursor /> */}
+      <main className={styles.main}>
+        <Hero id="backtotop" />
+        <Approch id="scrolldown" />
+        <Bestworks />
+        <Skills />
+        <Recommendations />
+        <Footer />
+      </main>
+    </div>
   );
 }

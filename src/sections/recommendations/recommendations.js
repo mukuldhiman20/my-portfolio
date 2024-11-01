@@ -10,17 +10,17 @@ export default function recommendations() {
       <p className={styles.title}>RECOMMENDATIONS</p>
       <div className={styles.cards}>
         <Recomcards
-          name="Ayush Chauhan"
-          companyLogo=""
-          position="CPO, Flabs"
-          content="Lorem ipsum dolor sit amet consectetur. Sed integer imperdiet sit metus. Rhoncus semper morbi pellentesque felis tortor libero non."
+          name="Vashisth Bhushan"
+          companyLogo="https://cdn.flabs.in/webassets/1e03c3da7546af76b525.jpeg"
+          position="CEO, ADesignGuy"
+          content="Mukul performed exceptionally well as a UI/UX Design intern. His ability to balance functionality with design excellence made him a valuable asset to our team."
         />
 
         <Recomcards
           name="Ayush Chauhan"
-          companyLogo=""
+          companyLogo="https://cdn.flabs.in/webassets/9ebaf2f030b577929773.jpeg"
           position="CPO, Flabs"
-          content="Lorem ipsum dolor sit amet consectetur. Sed integer imperdiet sit metus. Rhoncus semper morbi pellentesque felis tortor libero non."
+          content="Mukul has been with Flabs since day one, showing eagerness to learn. His hard work and brilliance make him a valuable asset to the team."
         />
       </div>
     </div>

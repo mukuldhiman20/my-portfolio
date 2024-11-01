@@ -22,7 +22,7 @@
 .cards {
   display: flex;
   flex-wrap: wrap;
-  gap: 32px;
+  gap: 52px;
   width: 100%;
   opacity: 0;
 }
@@ -65,5 +65,7 @@
 
   .button {
     text-decoration: none;
+    display: flex;
+    justify-content: center;
   }
 }

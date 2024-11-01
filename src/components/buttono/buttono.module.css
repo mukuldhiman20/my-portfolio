@@ -1,22 +1,68 @@
 .button {
-    display: flex;
-    padding: 8px 24px;
-    justify-content: center;
-    align-items: center;
-    gap: 12px;
-    width: fit-content;
-    background: #fafafa;
-    border-radius: 8px;
-    border: 1px solid #141414;
-    cursor: pointer;
-    /* text-decoration: none; */
+  display: flex;
+  padding: 8px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  width: fit-content;
+  background: #fafafa;
+  border-radius: 8px;
+  border: 1px solid #141414;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 .button p {
-    color: #141414;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 24px;
-    text-decoration: none;
+  color: #141414;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  text-decoration: none;
+}
+
+.arrowContainer {
+  position: relative;
+  overflow: hidden;
+}
+
+.arrow {
+  animation: initialArrow 0.2s ease-in-out forwards;
+}
+
+.button:hover .arrow {
+  animation: moveUp 0.3s ease-in-out forwards,
+    newArrow 0.2s ease-in-out 0.2s forwards;
+}
+
+@keyframes moveUp {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(20px);
+    opacity: 0;
+  }
+}
+
+@keyframes newArrow {
+  0% {
+    transform: translateX(-20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes initialArrow {
+  0% {
+    transform: translateX(-20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }

@@ -19,19 +19,39 @@ export default function Bestworks() {
           thumbnail="https://cdn.flabs.in/webassets/83474bd35a2837c9138f.png"
           title="Flabs"
           type="Internship - Flabs"
+          status="coming soon"
         />
 
-        <Link href="/works/zepto" className={styles.button}>
+        <Link href="/works/zepto" className={styles.button} target="blank">
           <Workcards
             thumbnail="https://cdn.flabs.in/webassets/24d6dbe517698a1f4589.png"
             title="Zepto - Heuristic Evaluation"
             type="Case Study"
+            status="view"
+          />
+        </Link>
+
+        <Link href="/works/grubit" className={styles.button} target="blank">
+          <Workcards
+            thumbnail="https://cdn.flabs.in/webassets/60e0f161abac0c9e5ea2.png"
+            title="GrubIT"
+            type="Case Study"
+            status="view"
+          />
+        </Link>
+
+        <Link href="/works/thomso23" className={styles.button} target="blank">
+          <Workcards
+            thumbnail="https://cdn.flabs.in/webassets/5ce721e6f059360bfb58.png"
+            title="Thomso'23"
+            type="Documentation"
+            status="view"
           />
         </Link>
       </div>
-      <Link href="/works" className={styles.button}>
+      {/* <Link href="/works" className={styles.button}>
         <Button />
-      </Link>
+      </Link> */}
     </div>
   );
 }
