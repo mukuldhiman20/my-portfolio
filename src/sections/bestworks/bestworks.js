@@ -15,12 +15,14 @@ export default function Bestworks() {
     <div className={styles.main} ref={ref}>
       <p className={`${styles.title}`}>Best Works</p>
       <div className={styles.cards}>
-        <Workcards
-          thumbnail="https://cdn.flabs.in/webassets/83474bd35a2837c9138f.png"
-          title="Flabs"
-          type="Internship - Flabs"
-          status="coming soon"
-        />
+        <Link href="/works/flabs" className={styles.button} target="blank">
+          <Workcards
+            thumbnail="https://cdn.flabs.in/webassets/83474bd35a2837c9138f.png"
+            title="Flabs"
+            type="Internship - Flabs"
+            status="coming soon"
+          />
+        </Link>
 
         <Link href="/works/zepto" className={styles.button} target="blank">
           <Workcards

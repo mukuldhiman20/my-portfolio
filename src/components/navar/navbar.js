@@ -91,11 +91,11 @@ export default function navbar() {
               <span>About Me</span>
             </Link>
           </li> */}
-          <li>
+          {/* <li>
             <Link className={styles.link} href="/works">
               <span>Works</span>
             </Link>
-          </li>
+          </li> */}
           <li>
             <Link className={styles.link} href="/resume" target="blank">
               <span>Resume</span>
