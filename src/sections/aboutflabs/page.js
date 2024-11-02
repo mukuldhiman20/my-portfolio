@@ -1,34 +1,11 @@
-"use client";
-
-import styles from "@/app/works/flabs/flabs.module.css";
+import styles from "@/sections/aboutflabs/aboutflabs.module.css";
 import useIntersectionAnimation from "@/hooks/useIntersectionAnimatio";
-import Link from "next/link";
-import Loader from "@/components/loader/loader";
-import Workcards from "@/components/workcards/workcards";
-import { useState, useEffect } from "react";
-import AboutFlabs from "@/sections/aboutflabs/page";
-import JourneyFlabs from "@/sections/journeyflabs/page";
 
-export default function flabs() {
-  const ref = useIntersectionAnimation([styles.cards, styles.title]);
-
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setLoading(false);
-    }, 1500);
-
-    return () => clearTimeout(timer);
-  }, []);
-
-  if (loading) {
-    return <Loader />;
-  }
-
+export default function anoutflabs() {
+  const ref = useIntersectionAnimation([styles.flabs]);
   return (
-    <div className={styles.body}>
-      {/* <div className={styles.flabs}>
+    <div ref={ref}>
+      <div className={styles.flabs}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="197"
@@ -110,86 +87,6 @@ export default function flabs() {
           WhatsApp, and securely manage medical data, shaping the future of
           healthcare.
         </p>
-      </div> */}
-      <AboutFlabs />
-      {/* <div className={styles.journey} ref={ref}>
-        <div className={styles.heading}>
-          <p className={styles.dark}>MY JOURNEY </p>
-          <p className={styles.light}>AT FLABS </p>
-        </div>
-        <div className={styles.content}>
-          <p className={styles.step}>
-            Joined Flabs as <br />
-            <strong> Founding Member and solo Product Designer</strong>
-          </p>
-          <div class={styles.verticleline}></div>
-          <p className={styles.step}>
-            Played a key role in shaping the product from day one by appling my
-            design skills.
-          </p>
-          <div class={styles.verticleline}></div>
-          <p className={styles.step}>
-            Expanded my knowledge in areas like{" "}
-            <strong>
-              frontend and backend development, product management, and UX
-              research
-            </strong>{" "}
-            with real users.
-          </p>
-          <div class={styles.verticleline}></div>
-          <p className={styles.now}>
-            Now, contributing as <strong>Head of Design team</strong> and
-            continually refining my skills and driving innovation across the
-            product.
-          </p>
-        </div>
-      </div> */}
-      <JourneyFlabs />
-      <div className={styles.main} ref={ref}>
-        <p className={`${styles.title}`}>Best Works</p>
-        <div className={styles.cards}>
-          <Link
-            href="/works/flabs/app"
-            className={styles.button}
-            target="blank"
-          >
-            <Workcards
-              thumbnail="https://cdn.flabs.in/webassets/94bc992db7d52e635d2b.png"
-              title="Flabs App"
-              type="Internship"
-              status="coming soon"
-            />
-          </Link>
-
-          <Link
-            href="/works/flabs/features"
-            className={styles.button}
-            target="blank"
-          >
-            <Workcards
-              thumbnail="https://cdn.flabs.in/webassets/c3a0b52d1bf4694d1971.png"
-              title="Impactful Works"
-              type="Internship"
-              status="view"
-            />
-          </Link>
-
-          {/* <Link
-            href="/works/flabs/branding"
-            className={styles.button}
-            target="blank"
-          > */}
-          <Workcards
-            thumbnail="https://cdn.flabs.in/webassets/a7da3bb55e108fe6c53a.png"
-            title="Flabs Branding"
-            type="Coming Soon"
-            status="view"
-          />
-          {/* </Link> */}
-        </div>
-        {/* <Link href="/works" className={styles.button}>
-        <Button />
-      </Link> */}
       </div>
     </div>
   );

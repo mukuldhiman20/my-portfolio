@@ -6,7 +6,7 @@ export default function features() {
       <div className={styles.container}>
         <div className={styles.scroll}>
           <img
-            src="https://cdn.flabs.in/webassets/c9b5b9529a99d52c5ede.png"
+            src="https://cdn.flabs.in/webassets/aa41c0f6adae4b3bdf81.png"
             alt={`thumbnail`}
             className={styles.thumbnail}
           />
