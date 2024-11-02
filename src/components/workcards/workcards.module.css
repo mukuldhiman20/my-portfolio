@@ -18,7 +18,7 @@
   cursor: url("https://cdn.flabs.in/webassets/355bba12b5505ca7bfb4.png"), auto;
   /* cursor: url("https://cdn.flabs.in/webassets/9cc198f82ac77f497347.png"), auto; */
   transform: scale(0.98);
-  transition: transform 1s ease;
+  transition: transform 0.7s ease;
 }
 
 .image {

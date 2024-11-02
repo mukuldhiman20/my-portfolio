@@ -11,8 +11,8 @@ export default function approch({ id }) {
     <div id={id} ref={ref} className={`${styles.main}`}>
       <p className={styles.title}>DESIGNING FOR IMPACT</p>
       <div className={styles.content}>
-        <p className={styles.light}>MY DESIGN APPROCH </p>
-        <p className={styles.dark}>ELEVATES USEREXPERIENCE </p>
+        <p className={styles.light}>MY DESIGN APPROACH </p>
+        <p className={styles.dark}>ELEVATES USER-EXPERIENCE </p>
         <p className={styles.light}>THAT </p>
         <p className={styles.dark}>HELP BUSINESS GROW</p>
       </div>

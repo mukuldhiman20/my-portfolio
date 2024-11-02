@@ -20,8 +20,9 @@ export default function hero({ id }) {
           <Spline scene="https://prod.spline.design/3zgIFixr-UzkbknH/scene.splinecode" />
         </div>
 
-        <Image
-          src="https://cdn.flabs.in/webassets/6dfcbbc05c598f509949.jpg"
+        <img
+          className={styles.image}
+          src="https://cdn.flabs.in/webassets/7546b799ef666abd259f.JPG"
           alt="Picture of the author"
           width={100}
           height={100}

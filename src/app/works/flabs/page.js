@@ -184,7 +184,7 @@ export default function flabs() {
             target="blank"
           >
             <Workcards
-              thumbnail="https://cdn.flabs.in/webassets/60e0f161abac0c9e5ea2.png"
+              thumbnail="https://cdn.flabs.in/webassets/c3a0b52d1bf4694d1971.png"
               title="Impactful Works"
               type="Internship"
               status="view"
