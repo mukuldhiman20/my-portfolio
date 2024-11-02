@@ -6,7 +6,7 @@ export default function app() {
       <div className={styles.container}>
         <div className={styles.scroll}>
           <img
-            src="https://cdn.flabs.in/webassets/c9b5b9529a99d52c5ede.png"
+            src="https://cdn.flabs.in/webassets/94bc992db7d52e635d2b.png"
             alt={`thumbnail`}
             className={styles.thumbnail}
           />

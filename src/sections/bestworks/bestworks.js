@@ -19,7 +19,7 @@ export default function Bestworks() {
           <Workcards
             thumbnail="https://cdn.flabs.in/webassets/83474bd35a2837c9138f.png"
             title="Flabs"
-            type="Internship - Flabs"
+            type="Internship"
             status="coming soon"
           />
         </Link>

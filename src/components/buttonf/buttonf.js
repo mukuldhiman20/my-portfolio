@@ -13,7 +13,7 @@ export default function button() {
   return (
     <Link href={mailtoLink} className={styles.button}>
       <div className={styles.button}>
-        <p>Get in Toch</p>
+        <p>Get in Touch</p>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="18"

@@ -158,7 +158,7 @@ export default function flabs() {
             target="blank"
           >
             <Workcards
-              thumbnail="https://cdn.flabs.in/webassets/83474bd35a2837c9138f.png"
+              thumbnail="https://cdn.flabs.in/webassets/94bc992db7d52e635d2b.png"
               title="Flabs App"
               type="Internship"
               status="coming soon"
