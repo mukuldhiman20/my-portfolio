@@ -166,19 +166,6 @@ export default function flabs() {
           </Link>
 
           <Link
-            href="/works/flabs/branding"
-            className={styles.button}
-            target="blank"
-          >
-            <Workcards
-              thumbnail="https://cdn.flabs.in/webassets/24d6dbe517698a1f4589.png"
-              title="Flabs Branding"
-              type="Internship"
-              status="view"
-            />
-          </Link>
-
-          <Link
             href="/works/flabs/features"
             className={styles.button}
             target="blank"
@@ -186,10 +173,23 @@ export default function flabs() {
             <Workcards
               thumbnail="https://cdn.flabs.in/webassets/c3a0b52d1bf4694d1971.png"
               title="Impactful Works"
-              type="Internship"
+              type="Coming Soon"
               status="view"
             />
           </Link>
+
+          {/* <Link
+            href="/works/flabs/branding"
+            className={styles.button}
+            target="blank"
+          > */}
+          <Workcards
+            thumbnail="https://cdn.flabs.in/webassets/a7da3bb55e108fe6c53a.png"
+            title="Flabs Branding"
+            type="Coming Soon"
+            status="view"
+          />
+          {/* </Link> */}
         </div>
         {/* <Link href="/works" className={styles.button}>
         <Button />

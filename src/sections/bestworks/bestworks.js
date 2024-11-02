@@ -17,7 +17,7 @@ export default function Bestworks() {
       <div className={styles.cards}>
         <Link href="/works/flabs" className={styles.button} target="blank">
           <Workcards
-            thumbnail="https://cdn.flabs.in/webassets/83474bd35a2837c9138f.png"
+            thumbnail="https://cdn.flabs.in/webassets/35fa8546d9599687291a.png"
             title="Flabs"
             type="Internship"
             status="coming soon"
